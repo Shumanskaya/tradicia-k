@@ -15,79 +15,64 @@
 
 <body>
     <!-- HEADER -->
-    <div class="container-fluid header">
-        <div class="row">
-            <div class="col-lg-4 logo">
-                <img src="./img/logo-impulse-120.png" alt="logo">
-            </div>
-            <div class="col-lg-8 contact">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-4 col-12 d-flex justify-content-center phone text-right">
-                                <p>+7 495 410-52-20</p>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-12 address d-flex align-items-center justify-content-center text-center">
-                                <p>115583, Москва, Елецкая, д. 26, корп. 2</p>
-                            </div>
-                            <div class="col-lg-2 col-md-4 col-12 social_header d-flex justify-content-lg-between justify-content-center">
-                                <i class="fab fa-facebook-f"></i>
-                                <i class="fab fa-youtube"></i>
-                                <i class="fab fa-vk"></i>
-                                <i class="fab fa-twitter"></i>
-                                <i class="fab fa-instagram"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 menu">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <nav class="navbar navbar-expand-lg navbar-light float-right">
-                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                        aria-expanded="false" aria-label="Toggle navigation">
-                                        <span class="navbar-toggler-icon"></span>
-                                    </button>
-                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                        <ul class="navbar-nav">
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Продукция
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Новости</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Статьи</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Контакты</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <i class="fas fa-bars"></i>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
+    <div class="header_porebrik">
+        <div class="logo_left">
+            <img src="./img/logo-impulse-120.png" alt="">
+        </div>
+        <div class="contact">
+            <div class="flex-wrapper">
+                <div class="phone">
+                    <p>+7 495 410-52-20</p>
+                </div>
+                <div>
+                    <p>115583, Москва, Елецкая, д. 26, корп. 2</p>
+                </div>
+                <div class="social_header">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-vk"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
                 </div>
             </div>
         </div>
+        <br>
+        <div class="menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Продукция
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Новости</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Статьи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fas fa-bars"></i>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
-
-        <!-- <div class="row justify-content-end">
-            <div class="col-lg-6 col-md-10 menu">
-                
-            </div>
-        </div> -->
     </div>
     <!-- END HEADER -->
 
     <!-- SECTION SLIDER -->
     <div class="container-fluid slider">
         <div class="row">
-            <div class="col-lg-5 col-md-7 slider_section">
+            <div class="col-lg-6 col-md-8 slider_section">
                 <h1>Гидромолот для экскаватора-погрузчика "под ключ"</h1>
                 <button class="btn_slide">купить</button>
             </div>
@@ -122,28 +107,31 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 tab_poduct list-group" id='list-tab' role="tablist">
-
                     <div class="str">
                         <ion-icon name="arrow-down"></ion-icon>
                         <div class="head_tab">
                             <h4 class="text-center">Сделано в России</h4>
                         </div>
                     </div>
-
                     <div>
-                        <a id='list_product' data-toggle="list" data-target="#about_product" role="tab" aria-controls="about_product">о продукте</a>
+                        <a id='list_product' data-toggle="list" data-target="#about_product" role="tab" aria-controls="about_product">
+                            <span>&#8226;</span> О продукте</a>
                     </div>
                     <div>
-                        <a id="list_advantages" data-toggle="list" data-target="#advantages" role="tab" aria-controls="advantages">преимущества</a>
+                        <a id="list_advantages" data-toggle="list" data-target="#advantages" role="tab" aria-controls="advantages">
+                            <span>&#8226;</span>Преимущества</a>
                     </div>
                     <div>
-                        <a>гидромолот "под ключ"</a>
+                        <a>
+                            <span>&#8226;</span>Гидромолот "под ключ"</a>
                     </div>
                     <div>
-                        <a>Гарантия</a>
+                        <a>
+                            <span>&#8226;</span>Гарантия</a>
                     </div>
                     <div>
-                        <a>Технопарк "импульс"</a>
+                        <a>
+                            <span>&#8226;</span>Технопарк "импульс"</a>
                     </div>
                 </div>
             </div>
